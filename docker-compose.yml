@@ -1,0 +1,24 @@
+version: '3'
+services:
+  php:
+    image: itchaiyaphum/strecher_management:V4  # แทนด้วยชื่อ Docker image ที่คุณต้องการ
+    volumes:
+      - './src:/var/www/html'
+      - './docker/php/php.ini:/usr/local/etc/php/php.ini'
+    networks:
+      - app_network
+
+  nginx:
+    image: nginx:latest
+    ports:
+      - 80:80
+    volumes:
+      - './src:/var/www/html'
+      - './docker/nginx/conf.d:/etc/nginx/conf.d'
+      - ./docker/nginx/snippets:/etc/nginx/snippets
+    networks:
+      - app_network
+
+networks:
+  app_network:
+    driver: bridge

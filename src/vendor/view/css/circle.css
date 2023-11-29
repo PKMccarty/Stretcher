@@ -1,0 +1,64 @@
+  .circle-container {
+    display: flex;
+    align-items: center;
+  }
+
+  .circle-primary {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #0d6efd;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .circle-success {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #198754;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .circle-warning {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #ffc107;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .circle-danger {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #dc3545;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .circle-info {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #0dcaf0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+  }
+
+  .icon-text {
+    text-align: right;
+  }
